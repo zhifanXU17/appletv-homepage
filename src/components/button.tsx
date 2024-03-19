@@ -12,18 +12,21 @@ export default function Button({
   size = 'medium',
 }: Props) {
   const sizeClassNames = {
-    small: 'text-xs px-[10px] py-[3px] tracking-normal',
+    small:
+      'text-xs px-[10px] py-[3px] tracking-normal bg-gradient-to-b from-white to-neutral-200 hover:opacity-95',
     medium: 'text-sm px-4 py-2 tracking-normal',
-    large: 'text-base px-8 py-4 tracking-normal',
+    large:
+      'text-base font-semibold px-8 py-4 tracking-normal bg-white hover:opacity-80',
   };
 
   return (
     <button
       className={twMerge(
-        'text-textBlack rounded-full bg-gradient-to-b from-white to-neutral-200 border-border border hover:opacity-95',
+        'rounded-full border border-border  text-textBlack ',
         sizeClassNames[size],
-        className
-      )}>
+        className,
+      )}
+    >
       {children}
     </button>
   );

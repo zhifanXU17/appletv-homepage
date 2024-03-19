@@ -4,8 +4,11 @@
 
 @layer {
   :root {
-    --header-row-height: 44px;
-    --header-height: calc(var(--header-row-height) * 2);
+    --globalnav-color: rgba(255, 255, 255, 0.8);
+    --globalnav-color-secondary: #e8e8ed;
+    --header-nav-height: 44px;
+    --header-row-height: 52px;
+    --header-height: calc(var(--header-nav-height) + var(--header-row-height));
     --hero-height: calc(100svh - var(--header-height));
   }
 }
