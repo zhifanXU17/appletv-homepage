@@ -14,7 +14,7 @@ function Hero() {
   const opacity = useTransform(scrollYProgress, [0, 0.7, 1], [1, 0.7, 0]);
 
   return (
-    <section className='h-[300vh] bg-background text-white'>
+    <section className='bg-background text-white'>
       <motion.div
         style={{ opacity }}
         ref={videoContainerRef}
